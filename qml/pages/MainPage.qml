@@ -33,13 +33,13 @@ Page {
 
             delegate: Column {
                 Button {
-                    property string cardName: (value === "Coffee") ? qsTr("Coffee") : value
-                    property int fontSize: (value === "Coffee") ? 120 : 300
+                    property bool isCoffee: value === "Coffee"
+                    property string cardName: isCoffee ? qsTr("Coffee") : value
 
                     text: cardName
                     width: gridView.width / 3 - Theme.paddingSmall
                     height: gridView.height / 5
-                    onClicked: pageStack.push(Qt.resolvedUrl("CardPage.qml"), {value: cardName, labelSize: fontSize})
+                    onClicked: pageStack.push(Qt.resolvedUrl("CardPage.qml"), {value: cardName, fontSize: (isCoffee ? 120 : 300)})
                 }
             }
         }
