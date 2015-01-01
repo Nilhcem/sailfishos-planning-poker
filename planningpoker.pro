@@ -20,6 +20,7 @@ OTHER_FILES += qml/planningpoker.qml \
     qml/cover/CoverPage.qml \
     qml/model/Cards.qml \
     qml/pages/AboutPage.qml \
+    qml/pages/CardPage.qml \
     qml/pages/MainPage.qml \
     rpm/planningpoker.changes.in \
     rpm/planningpoker.spec \

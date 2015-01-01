@@ -33,9 +33,10 @@ Page {
 
             delegate: Column {
                 Button {
-                    text: value;
+                    text: value
                     width: gridView.width / 3 - Theme.paddingSmall
                     height: gridView.height / 5
+                    onClicked: pageStack.push(Qt.resolvedUrl("CardPage.qml"), {value: value})
                 }
             }
         }

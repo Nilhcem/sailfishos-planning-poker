@@ -39,14 +39,14 @@ Page {
                 Label {
                     width: parent.width
                     wrapMode: Text.WordWrap
-                    horizontalAlignment: Text.Center
+                    horizontalAlignment: Text.AlignHCenter
                     text: qsTr("<b>Planning Poker</b>")
                 }
 
                 Label {
                     width: parent.width
                     wrapMode: Text.WordWrap
-                    horizontalAlignment: Text.Center
+                    horizontalAlignment: Text.AlignHCenter
                     font.pixelSize: Theme.fontSizeExtraSmall
                     text: qsTr("Version 1.0")
                 }
@@ -54,7 +54,7 @@ Page {
                 Label {
                     width: parent.width
                     wrapMode: Text.WordWrap
-                    horizontalAlignment: Text.Center
+                    horizontalAlignment: Text.AlignHCenter
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: Theme.highlightColor
                     linkColor: Theme.primaryColor
