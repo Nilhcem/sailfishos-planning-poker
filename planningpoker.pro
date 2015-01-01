@@ -18,8 +18,8 @@ SOURCES += src/planningpoker.cpp
 
 OTHER_FILES += qml/planningpoker.qml \
     qml/cover/CoverPage.qml \
+    qml/pages/AboutPage.qml \
     qml/pages/MainPage.qml \
-    qml/pages/SecondPage.qml \
     rpm/planningpoker.changes.in \
     rpm/planningpoker.spec \
     rpm/planningpoker.yaml \
