@@ -1,0 +1,12 @@
+# Temporary files
+*~
+\#*#
+
+# Local configuration files
+*.pro.user*
+
+# OSX files
+.DS_Store
+
+# Windows files
+Thumbs.db
