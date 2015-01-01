@@ -1,6 +1,7 @@
 # Temporary files
 *~
 \#*#
+*.autosave
 
 # Local configuration files
 *.pro.user*
