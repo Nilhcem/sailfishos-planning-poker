@@ -3,23 +3,33 @@ import Sailfish.Silica 1.0
 
 Page {
     id: cardPage
-
-    property alias value: cardLabel.text
+    property string value
 
     SilicaFlickable {
-        width: parent.width
-        height: parent.height
+        anchors.fill: parent
+
+        PageHeader {
+            id: header
+            title: qsTr("Tap to reveal")
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                cardLabel.visible = !cardLabel.visible
+                header.title = (cardLabel.visible) ? qsTr("Tap to hide") : qsTr("Tap to reveal")
+            }
+        }
 
         Label {
             id: cardLabel
-            width: cardPage.width
-            height: cardPage.height
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
+            anchors.centerIn: parent
 
             color: Theme.primaryColor
             wrapMode: Text.WordWrap
+            text: cardPage.value
             font.pixelSize: (text === "Coffee") ? 120 : 300
+            visible: false
         }
     }
 }

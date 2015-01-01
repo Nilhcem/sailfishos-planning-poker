@@ -21,6 +21,17 @@
     </message>
 </context>
 <context>
+    <name>CardPage</name>
+    <message>
+        <source>Tap to reveal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tap to hide</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CoverPage</name>
     <message>
         <source>Planning Poker</source>
