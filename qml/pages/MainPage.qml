@@ -1,15 +1,18 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-
+import "../model"
 
 Page {
     id: mainPage
 
-    // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
         anchors.fill: parent
 
-        // PullDownMenu and PushUpMenu must be declared in SilicaFlickable, SilicaListView or SilicaGridView
+        PageHeader {
+            id: header
+            title: qsTr("Planning Poker")
+        }
+
         PullDownMenu {
             MenuItem {
                 text: qsTr("About...")
@@ -17,24 +20,24 @@ Page {
             }
         }
 
-        // Tell SilicaFlickable the height of its content.
-        contentHeight: column.height
+        SilicaGridView {
+            id: gridView
+            anchors.top: header.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
 
-        // Place our content in a Column.  The PageHeader is always placed at the top
-        // of the page, followed by our content.
-        Column {
-            id: column
+            cellWidth: gridView.width / 3
+            cellHeight: gridView.height / 5
 
-            width: mainPage.width
-            spacing: Theme.paddingLarge
-            PageHeader {
-                title: qsTr("UI Template")
-            }
-            Label {
-                x: Theme.paddingLarge
-                text: qsTr("Hello Sailors")
-                color: Theme.secondaryHighlightColor
-                font.pixelSize: Theme.fontSizeExtraLarge
+            model: Cards {}
+
+            delegate: Column {
+                Button {
+                    text: value;
+                    width: gridView.width / 3 - Theme.paddingSmall
+                    height: gridView.height / 5
+                }
             }
         }
     }

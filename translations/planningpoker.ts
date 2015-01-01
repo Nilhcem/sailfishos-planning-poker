@@ -30,15 +30,11 @@
 <context>
     <name>MainPage</name>
     <message>
-        <source>UI Template</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Hello Sailors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>About...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Planning Poker</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

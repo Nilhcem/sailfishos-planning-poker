@@ -30,16 +30,12 @@
 <context>
     <name>MainPage</name>
     <message>
+        <source>Planning Poker</source>
+        <translation>Planning Poker</translation>
+    </message>
+    <message>
         <source>About...</source>
         <translation>À propos...</translation>
-    </message>
-    <message>
-        <source>UI Template</source>
-        <translation>Template</translation>
-    </message>
-    <message>
-        <source>Hello Sailors</source>
-        <translation>Salut!</translation>
     </message>
 </context>
 </TS>

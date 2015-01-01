@@ -18,6 +18,7 @@ SOURCES += src/planningpoker.cpp
 
 OTHER_FILES += qml/planningpoker.qml \
     qml/cover/CoverPage.qml \
+    qml/model/Cards.qml \
     qml/pages/AboutPage.qml \
     qml/pages/MainPage.qml \
     rpm/planningpoker.changes.in \
