@@ -29,5 +29,4 @@ OTHER_FILES += qml/planningpoker.qml \
 # to disable building translations every time, comment out the
 # following CONFIG line
 CONFIG += sailfishapp_i18n
-TRANSLATIONS += translations/planningpoker-de.ts
-
+TRANSLATIONS += translations/planningpoker-fr.ts

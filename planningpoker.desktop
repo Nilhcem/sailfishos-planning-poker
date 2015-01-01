@@ -3,8 +3,5 @@ Type=Application
 X-Nemo-Application-Type=silica-qt5
 Icon=planningpoker
 Exec=planningpoker
-Name=planningpoker
-# translation example:
-# your app name in German locale (de)
-Name[de]=planningpoker
-
+Name=Planning Poker
+Name[fr]=Planning Poker
