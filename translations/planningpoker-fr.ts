@@ -48,5 +48,9 @@
         <source>About...</source>
         <translation>À propos...</translation>
     </message>
+    <message>
+        <source>Coffee</source>
+        <translation>Café</translation>
+    </message>
 </context>
 </TS>

@@ -4,6 +4,7 @@ import Sailfish.Silica 1.0
 Page {
     id: cardPage
     property string value
+    property int labelSize
 
     SilicaFlickable {
         anchors.fill: parent
@@ -28,7 +29,7 @@ Page {
             color: Theme.primaryColor
             wrapMode: Text.WordWrap
             text: cardPage.value
-            font.pixelSize: (text === "Coffee") ? 120 : 300
+            font.pixelSize: cardPage.labelSize
             visible: false
         }
     }

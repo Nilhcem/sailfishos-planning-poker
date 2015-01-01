@@ -48,5 +48,9 @@
         <source>Planning Poker</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Coffee</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
